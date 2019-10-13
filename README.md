@@ -1,6 +1,6 @@
 # JarvisAssistant
 Per svegliare Jarvis utilizzare la parola chiave "Jarvis"
-Quindi, Jarvis rispondeà "I'm ready"
+quindi, Jarvis risponderà "I'm ready"
 
 Comandi:
   Make a Note

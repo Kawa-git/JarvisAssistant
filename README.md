@@ -8,7 +8,9 @@ Comandi:
   Search 
   Shutdown
   Weather
-  //---è necessario cambiare path-----//
-  //        Open Opera                //
-  //    Open Visual Studio            //
-  //----------------------------------//
+ //
+ è necessario cambiare path
+ Open Opera
+ Open Visual Studio
+ //
+

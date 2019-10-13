@@ -9,7 +9,7 @@ Comandi:
   Shutdown-
   Weather-
  //
- è necessario cambiare path
+ è necessario cambiare path:
  Open Opera
  Open Visual Studio
  //

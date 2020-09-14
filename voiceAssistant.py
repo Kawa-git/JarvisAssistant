@@ -57,9 +57,9 @@ isGoing=True
 WAKE ="jarvis"
 NOTE_STRS = ["make a note", "write this down", "write this", "remember this", "remember me to", "remember to"]
 NAME = ["what's your name", "what is your name", "do you have a name", "have you got a name"]
-WOLFRAME = ["search", "research"]
+WOLFRAM = ["search", "research", "what", "what's", "how", "many"]
 OPEN_OPERA=["opera","internet"]
-OPEN_VISUAL_STUDIO=["visual studio"]
+OPEN_VISUAL_STUDIO=["open visual studio", "run visual studio", "around visual studio"]
 SHUTDOWN = ["quit", "exit", "shut down"]
 WEATHER = ["weather", "what's the weather like"]
 while isGoing:
@@ -95,19 +95,21 @@ while isGoing:
                 visual_studio()
                 speak("Here we go")
 
-        for phrase in WOLFRAME:
+        for phrase in WOLFRAM:
             if phrase in text:
-                speak("What should i search?")
-                searchtext = get_audio()
-                res = ClinteWolfram.query(searchtext)
-                outputWolframe = next(res.results).text
-                print (outputWolframe)
-                speak(outputWolframe)
-
-        for phrase in WEATHER:
-            if phrase in text:
-                searchtext = "whats the weather like in milan"
-                res = ClinteWolfram.query(searchtext)
-                outputWolframe = next(res.results).text
-                speak(outputWolframe)
-                break
+                if text == "what's your name" or  text == "what is your name" or text == "do you have a name":
+                    break
+                #speak("What should i search?")
+                #searchtext = get_audio()
+                try:
+                    res = ClinteWolfram.query(text)
+                    outputWolfram = next(res.results).text
+                except:
+                    speak("I can't help you, sorry")
+                    break
+                speak(outputWolfram)
+                try:
+                    os.remove(filename)
+                except:
+                    pass
+            

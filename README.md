@@ -6,7 +6,7 @@ Moduli da installare:<br />
 wolframalpha<br />
 os<br />
 playsound<br />
-speech_recognition<br />
+SpeechRecognition<br />
 gtts<br />
 datetime<br />
 random<br />

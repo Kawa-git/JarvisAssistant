@@ -1,5 +1,5 @@
 # JarvisAssistant
-Per svegliare Jarvis utilizzare la parola chiave "Jarvis" quindi, Jarvis risponderà "I'm ready"<br />
+Per svegliare Jarvis basta utilizzare la parola chiave "Jarvis" quindi risponderà "I'm ready"<br />
 <br />
 
 Moduli da installare:<br />
@@ -16,9 +16,8 @@ subprocess<br />
 Comandi:<br />
   Make a Note<br />
   What's your name <br />
-  Search <br />
   Shutdown <br />
-  Weather<br />
+  Una qualunque domanda che inizia con What o simili verrà ricercata su WolframAlpha<br />
 <br />
  è necessario cambiare path:<br />
  Open Opera<br />
